@@ -11,7 +11,8 @@ $(document).ready(function() {
      });*/
   $(".testButton2").on("click", function() {
     var url = 'http://127.0.0.1:8888/YT/rest/channels/getChannelList?callback=parseResponse';
-    var xhr = createCORSRequest('GET', url);
-    xhr.send();
+    $.getJSON(url, function(data){
+        alert(data);
+    });
   });
 });
