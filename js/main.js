@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-  $.getJSON("../json/getContent.json", function(data) {
-    alert(data);
-    var output ="<p>";
-    for (var i in data.contents){
-      output += data.contents[i].content;
-    }
-    output+="</p>";
-    document.getElementById("contentInstallation").innerHTML=output;
+  $(".testButton2").on("click", function() {
+
+    $.getJSON( "172.17.0.2:8080/YT/rest/channels/getChannelList", function( data ) {
+       $.each(data, function(index, element) {
+           $("#channelId").append("<option value=\"" + element.EcomOutletId + "\">" + element.channelName + "</option>");
+       });
+   });
 
   });
+
 });

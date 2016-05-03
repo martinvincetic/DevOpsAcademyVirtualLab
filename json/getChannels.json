@@ -1,0 +1,40 @@
+[{
+    "channelName": "Media Markt AT",
+    "EcomOutletId": 718
+},
+{
+    "channelName": "Media Markt BE",
+    "EcomOutletId": 1241
+},
+{
+    "channelName": "Media Markt DE",
+    "EcomOutletId": 1125
+},
+{
+    "channelName": "Media Markt GR",
+    "EcomOutletId": 1256
+},
+{
+    "channelName": "Media Markt HU",
+    "EcomOutletId": 726
+},
+{
+    "channelName": "Media Markt NL",
+    "EcomOutletId": 742
+},
+{
+    "channelName": "Media Markt SE",
+    "EcomOutletId": 1124
+},
+{
+    "channelName": "Media Markt TR",
+    "EcomOutletId": 1259
+},
+{
+    "channelName": "Saturn AT",
+    "EcomOutletId": 719
+},
+{
+    "channelName": "Saturn DE",
+    "EcomOutletId": 1015
+}]
