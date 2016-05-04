@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,41 +19,60 @@
   <script src="js/vendor/jquery-2.1.4.min.js"></script>
   <script src="js/main.js"></script>
 </head>
-
 <body>
-  <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
   <div class="header-container">
     <header class="wrapper clearfix">
       <h1 class="title">Welcome to the VirtualLab</h1>
       <nav>
         <ul>
+          <!--
           <li><a href="#">FAQ</a></li>
           <li><a href="#">About</a></li>
+        -->
         </ul>
       </nav>
     </header>
   </div>
-
   <div class="main-container">
     <div class="main wrapper clearfix">
-
       <article>
         <header>
           <h1>Stores: </h1>
           <div id="stores">
-            <button id="testButton2" class="testButton2">Get Stores</button>
+            <hr>
             <div id="resultContainer">
-              <script type="application/javascript"
+              <!--  <script type="application/javascript"
                  src="http://127.0.0.1:8888/YT/rest/channels/getChannelList?callback=parseResponse">
-         </script>
+         </script>-->
             </div>
+            <hr>
+            <center>
+            <button id="refresh" class="refresh">Refresh Stores</button>
+          </center>
           </div>
         </header>
         <section>
-
+          <br/>
+          <div id="createChannelBox">
+            <form id="createChannel" method="post" action="#">
+              <h1>Create a new channel:</h1>
+              <hr/>
+              <br/> Channel id (ecomOutletId):
+              <br/>
+              <input type="text" id="ecomOutletId" name="ecomOutletId" placeholder="123">
+              <br/>
+              <br/> Channel name (channelName):
+              <br/>
+              <input type="text" id="channelName" name="channelName" placeholder="Media Markt Test">
+              <br/>
+              <br/>
+              <hr/>
+            </form>
+            <center>
+              <button id="createChannelButton" type="submit">Send</button>
+            </center>
+            <div id="createChannelResponse"></div>
+          </div>
         </section>
       </article>
 
@@ -76,9 +94,6 @@
     </footer>
   </div>
 
-  <!--  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-  </script> -->
 
 
 

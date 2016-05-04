@@ -50,6 +50,27 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+.table {
+    display:table;
+    text-align: center;
+}
+.table div {
+    display:table-row;
+    text-align: center;
+}
+.table div div {
+    display:table-cell;
+    width: 300px;
+    text-align: center;
+}
+#eID{
+      color: white;
+      background-color: #155e6a;
+}
+#chName{
+      color: white;
+      background-color: #1e8294;
+}
 
 
 /* ===== Initializr Styles ==================================================
