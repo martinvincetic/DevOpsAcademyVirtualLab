@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,6 +20,7 @@
   <script src="js/vendor/jquery-2.1.4.min.js"></script>
   <script src="js/main.js"></script>
 </head>
+
 <body>
   <div class="header-container">
     <header class="wrapper clearfix">
@@ -47,8 +49,8 @@
             </div>
             <hr>
             <center>
-            <button id="refresh" class="refresh">Refresh Stores</button>
-          </center>
+              <button id="refresh" class="refresh">Refresh Stores</button>
+            </center>
           </div>
         </header>
         <section>
@@ -59,7 +61,7 @@
               <hr/>
               <br/> Channel id (ecomOutletId):
               <br/>
-              <input type="text" id="ecomOutletId" name="ecomOutletId" placeholder="123" >
+              <input type="text" id="ecomOutletId" name="ecomOutletId" placeholder="123">
               <br/>
               <br/> Channel name (channelName):
               <br/>
@@ -76,13 +78,25 @@
           </div>
         </section>
       </article>
-
+      <aside style="margin-bottom:10px">
+        <p>
+          <center>
+            <h3>Server Links</h3>
+            <a href="http://localhost:8888">Tomcat Server</a>
+            <br/>
+            <a href="http://localhost:4040">Jenkins Server</a>
+            <br/>
+            <a href="http://localhost:8500/ui/dist">Consul Server</a>
+          </center>
+      </aside>
       <aside>
         <h3>What is the VirtualLab?</h3>
         <p>
           The idea behind the VirtualLab is that people without any DevOps background, will achieve these skills after the workshop and learn about the technologies we're using for a DevOps project.
         </p>
       </aside>
+      <hr>
+
 
     </div>
     <!-- #main -->
