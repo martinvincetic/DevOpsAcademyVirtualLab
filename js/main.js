@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var url = 'http://127.0.0.1:8888/YT/rest/channels/getChannelList?callback=parseResponse';
+  var url = 'http://172.17.0.5:8888/YT/rest/channels/getChannelList?callback=parseResponse';
   $.getJSON(url, function(data) {
     $.each(data, function(index, element) {
       var newHtml = '<div class="table">' +
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
       // Make a ajax call, that posts the Json. Depending on result, the error or success function is called
       $.ajax({
-        url: "http://127.0.0.1:8888/YT/rest/channels/upsertChannel",
+        url: "http://172.17.0.5:8888/YT/rest/channels/upsertChannel",
         type: "POST",
         data: dataToSend,
         contentType: "application/json; charset=utf-8",
